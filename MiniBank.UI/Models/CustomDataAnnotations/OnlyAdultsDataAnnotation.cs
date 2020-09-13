@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebUI.Models.CustomDataAnnotations
 {
-    public class AdultDataAnnotation : ValidationAttribute
+    public class OnlyAdultsDataAnnotation : ValidationAttribute
     {
         public override bool IsValid(object value)
         {

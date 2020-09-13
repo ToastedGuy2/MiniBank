@@ -22,7 +22,13 @@
         </e>
       </e>
       <e p="MiniBank.DAL" t="IncludeRecursive">
+        <e p="Migrations" t="Include">
+          <e p="20200911194323_IdentityReady.Designer.cs" t="Include" />
+          <e p="20200911194323_IdentityReady.cs" t="Include" />
+          <e p="MiniBankDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="MiniBank.DAL.csproj" t="IncludeRecursive" />
+        <e p="MiniBankDbContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -33,6 +39,8 @@
         </e>
       </e>
       <e p="MiniBank.Entities" t="IncludeRecursive">
+        <e p="BankAccount.cs" t="Include" />
+        <e p="Client.cs" t="Include" />
         <e p="MiniBank.Entities.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -56,12 +64,54 @@
         </e>
       </e>
       <e p="MiniBank.UI" t="IncludeRecursive">
+        <e p="Components" t="Include">
+          <e p="SignOut.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
+          <e p="BankAccountController.cs" t="Include" />
+          <e p="BankController.cs" t="Include" />
+        </e>
         <e p="MiniBank.UI.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="CustomDataAnnotations" t="Include">
+            <e p="OnlyAdultsDataAnnotation.cs" t="Include" />
+          </e>
+          <e p="ViewModels" t="Include">
+            <e p="SignInViewModel.cs" t="Include" />
+            <e p="SignUpViewModel.cs" t="Include" />
+          </e>
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Account" t="Include">
+            <e p="SignIn.cshtml" t="Include" />
+            <e p="SignUp.cshtml" t="Include" />
+          </e>
+          <e p="Bank" t="Include">
+            <e p="Deposit.cshtml" t="Include" />
+            <e p="Transfer.cshtml" t="Include" />
+            <e p="Withdraw.cshtml" t="Include" />
+          </e>
+          <e p="BankAccount" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="Components" t="Include">
+              <e p="SignOut" t="Include">
+                <e p="Default.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LayoutForSignInAndUp.cshtml" t="Include" />
+          </e>
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+        </e>
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -69,6 +119,46 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="MiniBank.UI.AssemblyInfo.cs" t="Include" />
+              <e p="MiniBank.UI.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="CSS" t="Include" />
+          <e p="Images" t="Include" />
+          <e p="JS" t="Include">
+            <e p="alertDemo.js" t="Include" />
+          </e>
+          <e p="Libraries" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="css" t="Include">
+                <e p="bootstrap.min.css" t="Include" />
+              </e>
+              <e p="js" t="Include">
+                <e p="bootstrap.bundle.min.js" t="Include" />
+              </e>
+            </e>
+            <e p="jquery" t="Include">
+              <e p="LICENSE.txt" t="Include" />
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p="LICENSE.md" t="Include" />
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p="LICENSE.txt" t="Include" />
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
             </e>
           </e>
         </e>

@@ -2,10 +2,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebUI.Controllers
 {
-    public class Bank : Controller
+    public class BankController : Controller
     {
-        // GET
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Deposit()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Withdraw()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Transfer()
         {
             return View();
         }

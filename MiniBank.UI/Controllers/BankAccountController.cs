@@ -1,12 +1,13 @@
-$HEADER$using Microsoft.AspNetCore.Mvc;
-namespace $NAMESPACE$
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebUI.Controllers
 {
-  public class $CLASS$: Controller
-  {
-    // GET
-    public IActionResult Index()
+    public class BankAccountController : Controller
     {
-	  $END$return View();
+        // GET
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
-  }
 }

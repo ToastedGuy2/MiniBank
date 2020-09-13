@@ -1,19 +1,22 @@
-using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using MiniBank.BLL;
 using MiniBank.Entities;
+using WebUI.Models.ViewModels;
 
 namespace WebUI.Controllers
 {
-    public class LoginController : Controller
+    public class AccountController : Controller
     {
-        private readonly IAccountSystem _accountSystem;
+        private readonly SignInManager<Client> _signInManager;
+        private readonly UserManager<Client> _userManager;
 
-        public LoginController(IAccountSystem accountSystem)
+        public AccountController(UserManager<Client> userManager, SignInManager<Client> signInManager)
         {
-            _accountSystem = accountSystem;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
-        
+
         [HttpGet]
         public IActionResult SignUp()
         {
@@ -21,41 +24,64 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult SignUp(Client client)
+        public async Task<IActionResult> SignUp(SignUpViewModel viewModel)
         {
-            IActionResult result = View();
             if (ModelState.IsValid)
             {
-                try
+                var client = new Client
                 {
-                    _accountSystem.SignUp(client);
-                    result = RedirectToAction("SignIn");
+                    UserName = viewModel.Username, FullName = viewModel.FullName, BirthDate = viewModel.BirthDate.Value,
+                    Email = viewModel.Email
+                };
+                var result = await _userManager.CreateAsync(client, viewModel.Password);
+                if (result.Succeeded)
+                {
+                    TempData["DidHeJustSignUp"] = true;
+                    return RedirectToAction("SignIn");
                 }
-                catch (InvalidOperationException e) when(e.Message == "There's already a Client with such email")
+
+                foreach (var error in result.Errors)
                 {
-                    ViewData["EmailError"] = e.Message;
-                }
-                catch (InvalidOperationException e) when(e.Message == "There's already a Client with such Id")
-                {
-                    ViewData["IdError"] = e.Message;
+                    if (error.Code.Contains("User"))
+                        ViewData["UserError"] = "The Id is already taken";
+                    if (error.Code.Contains("Email"))
+                        ViewData["EmailError"] = "The email is already taken";
+                    if (error.Code.Contains("Password"))
+                        ViewData["PasswordError"] =
+                            "Your password must be at least 6 characters, and it must contains one uppercase letter, one lowercase letter and one non alphanumerical character";
+                    // ModelState.AddModelError("",error.Description);
                 }
             }
-                return result;
+
+            return View();
         }
-        [HttpPost]
-        public IActionResult SignIn(int id, string password)
+
+        [HttpGet]
+        public IActionResult SignIn()
         {
             return View();
         }
 
-        public IActionResult Demo()
+        [HttpPost]
+        public async Task<IActionResult> SignIn(SignInViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password,
+                    model.ShouldIRememberYou, false);
+                if (result.Succeeded) return RedirectToAction("Index", "BankAccount");
+
+                ViewData["SignInError"] = true;
+            }
+
             return View();
         }
+
         [HttpPost]
-        public IActionResult Demo(Client client)
+        public IActionResult SignOut()
         {
-            return View();
+            _signInManager.SignOutAsync();
+            return RedirectToAction("SignIn");
         }
     }
 }
