@@ -7,3 +7,9 @@
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.csproj.CoreCompileInputs.cache
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.dll
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.pdb
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.DAL.runtimeconfig.json
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.DAL.runtimeconfig.dev.json
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.csproj.CopyComplete
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.genruntimeconfig.cache
