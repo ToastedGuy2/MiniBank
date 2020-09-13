@@ -1,17 +1,50 @@
-@model Client
+@model SignInViewModel
 @{
     ViewBag.Title = "Sign In";
+    Layout = "_LayoutForSignInAndUp";
 }
 
-<form asp-controller="Login" asp-action="SignIn" method="post">
-    <div class="form-group">
-        <label asp-for="FullName"></label>
-        <input type="text" class="form-control" asp-for="FullName">
-        <span class="text-danger" asp-validation-for="FullName"></span>
-    </div>
-        <div class="form-group">
-            <label asp-for="ConfirmPassword"></label>
-            <input type="password" class="form-control" asp-for="ConfirmPassword"/>
-            <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+<form class="shadow rounded p-5 " asp-controller="Account" asp-action="SignIn" method="post">
+    
+    @{
+        if (TempData["DidHeJustSignUp"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div class="text-center">You have been registred Successfully, please Sign In</div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+    }
+    @if (ViewData["SignInError"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <div class="text-center">Invalid Login Attempt</div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
+    }
+
+    <h1 class="text-center">Login</h1>
+    <div class="form-group">
+        <label asp-for="Username"></label>
+        <input type="text" class="form-control" asp-for="Username" placeholder="117100202">
+        <span class="text-danger" asp-validation-for="Username"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input type="password" class="form-control" asp-for="Password" placeholder="**********"/>
+        <span class="text-danger" asp-validation-for="Password"></span>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" asp-for="ShouldIRememberYou">
+        <label class="form-check-label" asp-for="ShouldIRememberYou"></label>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary mt-2">Login</button>
+    <div class="mt-3 text-center">
+        <span >Not registered? <a asp-controller="Account" asp-action="SignUp" class="text-primary">Sign Up here!!</a></span>
+    </div>
 </form>

@@ -14,7 +14,17 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.BLL/MiniBank.BLL.csproj": {
+            "projectPath": "/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.BLL/MiniBank.BLL.csproj"
+          },
+          "/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/MiniBank.DAL.csproj": {
+            "projectPath": "/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.DAL/MiniBank.DAL.csproj"
+          },
+          "/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.Entities/MiniBank.Entities.csproj": {
+            "projectPath": "/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.Entities/MiniBank.Entities.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -25,6 +35,36 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Identity.UI": {
+          "target": "Package",
+          "version": "[3.1.8, )"
+        },
+        "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+          "target": "Package",
+          "version": "[3.1.7, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.7, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[3.1.7, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[3.1.7, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[3.1.7, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",
@@ -43,7 +83,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
     }
   }
 }

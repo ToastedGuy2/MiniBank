@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R2AnOGA8nhFFUUyHhn5NTStJp8fFKMIknZ1zbLnvMr1udA3IK+i1gW6K2XlS4ILG1ypbF57pabwKzDk1k8fOiw==",
+  "dgSpecHash": "d/nlGVdsuYX8O/pmZ+ahfC78pvL8UzqsVs5hlb3ZDlGuFqx+VeTP39OLRDHwt+OIm2CxO148ByIvNMsvJWfmww==",
   "success": true,
   "projectFilePath": "/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.Tests.Xunit/MiniBank.Tests.Xunit.csproj",
   "expectedPackageFiles": [

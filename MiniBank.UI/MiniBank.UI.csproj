@@ -5,4 +5,41 @@
         <RootNamespace>WebUI</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MiniBank.BLL\MiniBank.BLL.csproj" />
+      <ProjectReference Include="..\MiniBank.DAL\MiniBank.DAL.csproj" />
+      <ProjectReference Include="..\MiniBank.Entities\MiniBank.Entities.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\CSS" />
+      <Folder Include="wwwroot\Images" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation-unobtrusive\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation\dist\additional-methods.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation\dist\additional-methods.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation\dist\jquery.validate.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation\dist\jquery.validate.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Libraries\bootstrap\jquery-validation\LICENSE.md" />
+    </ItemGroup>
+
 </Project>
