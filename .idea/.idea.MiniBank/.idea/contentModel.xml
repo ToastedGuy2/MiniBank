@@ -22,6 +22,8 @@
         </e>
       </e>
       <e p="MiniBank.DAL" t="IncludeRecursive">
+        <e p="BankAccountRepository.cs" t="Include" />
+        <e p="IBankAccountRepository.cs" t="Include" />
         <e p="Migrations" t="Include">
           <e p="20200911194323_IdentityReady.Designer.cs" t="Include" />
           <e p="20200911194323_IdentityReady.cs" t="Include" />
@@ -41,6 +43,11 @@
       <e p="MiniBank.Entities" t="IncludeRecursive">
         <e p="BankAccount.cs" t="Include" />
         <e p="Client.cs" t="Include" />
+        <e p="CustomDataAnnotations" t="Include">
+          <e p="MinimumAmount.cs" t="Include" />
+          <e p="OnlyAdults.cs" t="Include" />
+          <e p="OnlyMoneyAttribute.cs" t="Include" />
+        </e>
         <e p="MiniBank.Entities.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -74,10 +81,8 @@
         </e>
         <e p="MiniBank.UI.csproj" t="IncludeRecursive" />
         <e p="Models" t="Include">
-          <e p="CustomDataAnnotations" t="Include">
-            <e p="OnlyAdultsDataAnnotation.cs" t="Include" />
-          </e>
           <e p="ViewModels" t="Include">
+            <e p="SearchResultViewModel.cs" t="Include" />
             <e p="SignInViewModel.cs" t="Include" />
             <e p="SignUpViewModel.cs" t="Include" />
           </e>
@@ -98,7 +103,10 @@
             <e p="Withdraw.cshtml" t="Include" />
           </e>
           <e p="BankAccount" t="Include">
-            <e p="Index.cshtml" t="Include" />
+            <e p="Add.cshtml" t="Include" />
+            <e p="List.cshtml" t="Include" />
+            <e p="SearchResult.cshtml" t="Include" />
+            <e p="Update.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="Components" t="Include">
@@ -107,7 +115,7 @@
               </e>
             </e>
             <e p="_Layout.cshtml" t="Include" />
-            <e p="_LayoutForSignInAndUp.cshtml" t="Include" />
+            <e p="_LayoutForForms.cshtml" t="Include" />
           </e>
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
@@ -124,7 +132,9 @@
           </e>
         </e>
         <e p="wwwroot" t="Include">
-          <e p="CSS" t="Include" />
+          <e p="CSS" t="Include">
+            <e p="forms.css" t="Include" />
+          </e>
           <e p="Images" t="Include" />
           <e p="JS" t="Include">
             <e p="alertDemo.js" t="Include" />
@@ -164,6 +174,18 @@
         </e>
       </e>
       <e p="MiniBank.sln" t="IncludeFlat" />
+      <e p="Test" t="IncludeRecursive">
+        <e p="Program.cs" t="Include" />
+        <e p="Test.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Test.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>

@@ -26,7 +26,7 @@ namespace WebUI
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddDbContextPool<MiniBankDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
-            // services.AddScoped<IClientRepository, ClientRepository>();
+            services.AddScoped<IBankAccountRepository, BankAccountRepository>();
             // services.AddScoped<IAccountSystem, AccountSystem>();
 
             services.AddIdentity<Client, IdentityRole>().AddEntityFrameworkStores<MiniBankDbContext>();
@@ -50,7 +50,7 @@ namespace WebUI
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("default", "{controller=BankAccount}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("default", "{controller=BankAccount}/{action=List}/{accountNumber?}");
             });
         }
     }

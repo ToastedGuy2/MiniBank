@@ -1,0 +1,13 @@
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/bin/Debug/netcoreapp3.1/Test
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/bin/Debug/netcoreapp3.1/Test.deps.json
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/bin/Debug/netcoreapp3.1/Test.runtimeconfig.json
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/bin/Debug/netcoreapp3.1/Test.runtimeconfig.dev.json
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/bin/Debug/netcoreapp3.1/Test.dll
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/bin/Debug/netcoreapp3.1/Test.pdb
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/obj/Debug/netcoreapp3.1/Test.csprojAssemblyReference.cache
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/obj/Debug/netcoreapp3.1/Test.AssemblyInfoInputs.cache
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/obj/Debug/netcoreapp3.1/Test.AssemblyInfo.cs
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/obj/Debug/netcoreapp3.1/Test.csproj.CoreCompileInputs.cache
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/obj/Debug/netcoreapp3.1/Test.dll
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/obj/Debug/netcoreapp3.1/Test.pdb
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/Test/obj/Debug/netcoreapp3.1/Test.genruntimeconfig.cache

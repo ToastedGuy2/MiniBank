@@ -20,7 +20,7 @@ namespace WebUI.Controllers
         [HttpGet]
         public IActionResult SignUp()
         {
-            return View();
+            return View(new SignUpViewModel());
         }
 
         [HttpPost]
@@ -43,17 +43,17 @@ namespace WebUI.Controllers
                 foreach (var error in result.Errors)
                 {
                     if (error.Code.Contains("User"))
-                        ViewData["UserError"] = "The Id is already taken";
+                        viewModel.UsernameError = "The Id is already taken";
                     if (error.Code.Contains("Email"))
-                        ViewData["EmailError"] = "The email is already taken";
+                        viewModel.EmailError = "The email is already taken";
                     if (error.Code.Contains("Password"))
-                        ViewData["PasswordError"] =
+                        viewModel.PasswordError =
                             "Your password must be at least 6 characters, and it must contains one uppercase letter, one lowercase letter and one non alphanumerical character";
                     // ModelState.AddModelError("",error.Description);
                 }
             }
 
-            return View();
+            return View(viewModel);
         }
 
         [HttpGet]
@@ -69,12 +69,12 @@ namespace WebUI.Controllers
             {
                 var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password,
                     model.ShouldIRememberYou, false);
-                if (result.Succeeded) return RedirectToAction("Index", "BankAccount");
+                if (result.Succeeded) return RedirectToAction("List", "BankAccount");
 
-                ViewData["SignInError"] = true;
+                model.ShouldIShowSignInError = true;
             }
 
-            return View();
+            return View(model);
         }
 
         [HttpPost]

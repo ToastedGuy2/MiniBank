@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBank.DAL", "MiniBank.DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBank.Tests.Xunit", "MiniBank.Tests.Xunit\MiniBank.Tests.Xunit.csproj", "{E8259866-203E-4253-B14A-93150CA9FEE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{FC2887FF-8BC9-4C0C-BBA1-B5260A1E7771}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{E8259866-203E-4253-B14A-93150CA9FEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8259866-203E-4253-B14A-93150CA9FEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8259866-203E-4253-B14A-93150CA9FEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2887FF-8BC9-4C0C-BBA1-B5260A1E7771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2887FF-8BC9-4C0C-BBA1-B5260A1E7771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2887FF-8BC9-4C0C-BBA1-B5260A1E7771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2887FF-8BC9-4C0C-BBA1-B5260A1E7771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

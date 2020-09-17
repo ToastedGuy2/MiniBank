@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using WebUI.Models.CustomDataAnnotations;
+using MiniBank.Entities.CustomDataAnnotations;
 
 namespace WebUI.Models.ViewModels
 {
@@ -9,7 +9,7 @@ namespace WebUI.Models.ViewModels
         [Display(Name = "Id")]
         [Required]
         [RegularExpression(@"^[1-9][0-9]*$",
-            ErrorMessage = "Your must contain numerical characters, also it has to be bigger than 0")]
+            ErrorMessage = "Your Id must contain numerical characters, also it has to be bigger than 0")]
         public string Username { get; set; } //Cannot generate the Id automatically
 
         [Display(Name = "Full Name")]
@@ -18,7 +18,7 @@ namespace WebUI.Models.ViewModels
 
         [Display(Name = "Birth Date")]
         [Required]
-        [OnlyAdultsDataAnnotation(ErrorMessage = "Your age must be least 18 to register")]
+        [OnlyAdults(ErrorMessage = "Your age must be least 18 to register")]
         public DateTime? BirthDate { get; set; }
 
         [Required] [EmailAddress] public string Email { get; set; }
@@ -29,5 +29,9 @@ namespace WebUI.Models.ViewModels
         [Required]
         [Compare("Password", ErrorMessage = "Your confirm password doesn't match the original password")]
         public string ConfirmPassword { get; set; } // This is not a property on a table
+
+        public string UsernameError { get; set; }
+        public string EmailError { get; set; }
+        public string PasswordError { get; set; }
     }
 }

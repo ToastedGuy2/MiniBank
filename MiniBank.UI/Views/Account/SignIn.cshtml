@@ -1,30 +1,43 @@
 @model SignInViewModel
 @{
     ViewBag.Title = "Sign In";
-    Layout = "_LayoutForSignInAndUp";
+    Layout = "_LayoutForForms";
 }
 
-<form class="shadow rounded p-5 " asp-controller="Account" asp-action="SignIn" method="post">
-    
+<form class="shadow rounded p-5" asp-controller="Account" asp-action="SignIn" method="post">
     @{
-        if (TempData["DidHeJustSignUp"] != null)
+        if (TempData["IsHeSignIn"] != null)
         {
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <div class="text-center">You have been registred Successfully, please Sign In</div>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <div class="text-center">Access Denied. Please login</div>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
         }
     }
-    @if (ViewData["SignInError"] != null)
+    @{
+        if (TempData["DidHeJustSignUp"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div class="text-center">Your account has been created Successfully</div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+    }
+    @if (Model != null)
     {
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <div class="text-center">Invalid Login Attempt</div>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
+        if (Model.ShouldIShowSignInError)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <div class="text-center">Invalid Login Attempt</div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
     }
 
     <h1 class="text-center">Login</h1>
