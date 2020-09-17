@@ -27,117 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6492538-1a40-4368-8b5d-995e9def3368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MiniBank.DAL/BankAccountRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.DAL/IBankAccountRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.Entities/CustomDataAnnotations/MinimumAmount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.Entities/CustomDataAnnotations/OnlyMoneyAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/Models/ViewModels/SearchResultViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Add.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/List.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/SearchResult.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Update.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Add.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/List.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/SearchResult.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Update.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LayoutForForms.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniBank.UI/wwwroot/CSS/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Test.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/bin/Debug/netcoreapp3.1/Test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/bin/Debug/netcoreapp3.1/Test.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/bin/Debug/netcoreapp3.1/Test.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/bin/Debug/netcoreapp3.1/Test.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/bin/Debug/netcoreapp3.1/Test.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/bin/Debug/netcoreapp3.1/Test.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Debug/netcoreapp3.1/Test.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Test.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/Test.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniBank/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiniBank/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniBank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiniBank/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/obj/Debug/netcoreapp3.1/MiniBank.BLL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/obj/Debug/netcoreapp3.1/MiniBank.BLL.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/obj/Debug/netcoreapp3.1/MiniBank.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/obj/Debug/netcoreapp3.1/MiniBank.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/obj/Debug/netcoreapp3.1/MiniBank.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/obj/Debug/netcoreapp3.1/MiniBank.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.BLL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.BLL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/obj/Debug/netcoreapp3.1/MiniBank.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.DAL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/BankAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/BankAccount.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/obj/Debug/netcoreapp3.1/MiniBank.Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Tests.Xunit/obj/Debug/netcoreapp3.1/MiniBank.Tests.Xunit.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Tests.Xunit/obj/Debug/netcoreapp3.1/MiniBank.Tests.Xunit.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.Tests.Xunit/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Tests.Xunit/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Controllers/BankAccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Controllers/BankAccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Controllers/BankController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Controllers/BankController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/MiniBank.UI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/MiniBank.UI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Models/CustomDataAnnotations/OnlyAdultsDataAnnotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.Entities/CustomDataAnnotations/OnlyAdults.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Models/ViewModels/SignInViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Models/ViewModels/SignInViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Models/ViewModels/SignUpViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Models/ViewModels/SignUpViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Views/Account/SignIn.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Views/Account/SignIn.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Views/Account/SignUp.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Views/Account/SignUp.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Views/Shared/_LayoutForSignInAndUp.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Views/Shared/_LayoutForForms.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.Entities.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/bin/Debug/netcoreapp3.1/MiniBank.UI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.RazorCoreGenerate.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Update.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Update.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/MiniBank.UI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Account/SignIn.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Account/SignIn.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Account/SignUp.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Account/SignUp.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Index.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LayoutForSignInAndUp.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/MiniBank.UI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/MiniBank.UI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.UI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.UI/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniBank.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MiniBank.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,13 +56,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Update.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Add.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/851DC736-17B7-47FB-9CD4-DD3F38D22C2F/3/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2E5F3E8F-B4C5-4891-AEA5-F382D67EF91A/2/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MiniBank.UI/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MiniBank.Entities/Client.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MiniBank.Entities/BankAccount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MiniBank.UI/Views/Account/SignUp.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Add.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -207,8 +99,6 @@
         <option value="$PROJECT_DIR$/MiniBank.UI/Models/CustomDataAnnotations/MinimumAmount.cs" />
         <option value="$PROJECT_DIR$/MiniBank.UI/Models/CustomDataAnnotations/OnlyAdults.cs" />
         <option value="$PROJECT_DIR$/MiniBank.Entities/BankAccount.cs" />
-        <option value="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Add.cshtml" />
-        <option value="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Update.cshtml" />
         <option value="$PROJECT_DIR$/MiniBank.UI/Models/ViewModels/SignInViewModel.cs" />
         <option value="$PROJECT_DIR$/MiniBank.UI/Models/ViewModels/SignUpViewModel.cs" />
         <option value="$PROJECT_DIR$/MiniBank.UI/Controllers/AccountController.cs" />
@@ -226,6 +116,8 @@
         <option value="$PROJECT_DIR$/MiniBank.UI/Views/Account/SignUp.cshtml" />
         <option value="$PROJECT_DIR$/MiniBank.UI/Views/Shared/_LayoutForForms.cshtml" />
         <option value="$PROJECT_DIR$/MiniBank.UI/wwwroot/CSS/forms.css" />
+        <option value="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Add.cshtml" />
+        <option value="$PROJECT_DIR$/MiniBank.UI/Views/BankAccount/Update.cshtml" />
       </list>
     </option>
   </component>
