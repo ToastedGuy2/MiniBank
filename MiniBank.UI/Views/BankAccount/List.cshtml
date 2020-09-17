@@ -1,0 +1,36 @@
+@model IEnumerable<BankAccount>
+
+@{
+    ViewBag.Title = "Bank Accounts";
+    Layout = "_Layout";
+}
+
+<h1>Bank Accounts</h1>
+
+<a class="btn btn-dark" asp-action="Add">Add a Bank Account</a>
+<table class="table mt-2">
+    <thead>
+    <tr>
+        <th>Account Number</th>
+        <th>Name</th>
+        <th>Money</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var bankAccount in Model)
+    {
+        <tr>
+            <td>@bankAccount.AccountNumber</td>
+            <td>@bankAccount.Name</td>
+            <td>@bankAccount.Money</td>
+            <td>
+                <form asp-action="Delete" asp-route-accountNumber="@bankAccount.AccountNumber">
+                    <a class="btn btn-warning" asp-action="Update" asp-route-accountNumber="@bankAccount.AccountNumber">Update</a>
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebUI.Models.CustomDataAnnotations
+namespace MiniBank.Entities.CustomDataAnnotations
 {
-    public class OnlyAdultsDataAnnotation : ValidationAttribute
+    public class OnlyAdults : ValidationAttribute
     {
         public override bool IsValid(object value)
         {

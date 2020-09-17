@@ -1,0 +1,42 @@
+@model SearchResultViewModel
+
+@{
+    ViewBag.Title = $"Results related to {Model.SearchText}";
+    Layout = "_Layout";
+}
+@{
+    if (Model.NumberOfResults <= 0)
+    {
+        <h2>We didn't find any Bank Account related to <span class="text-danger">@Model.SearchText</span> </h2>
+    }
+    else
+    {
+        <h2>We find <span class="text-success">@Model.NumberOfResults </span> Bank Accounts related to <span class="text-primary">@Model.SearchText</span></h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Name</th>
+                <th>Money
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var bankAccount in Model.Results)
+            {
+                <tr>
+                    <td>@bankAccount.AccountNumber</td>
+                    <td>@bankAccount.Name</td>
+                    <td>@bankAccount.Money</td>
+                    <td>
+                        <form asp-action="Delete" asp-route-accountNumber="@bankAccount.AccountNumber">
+                            <a class="btn btn-warning" asp-action="Update" asp-route-accountNumber="@bankAccount.AccountNumber">Update</a>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+}

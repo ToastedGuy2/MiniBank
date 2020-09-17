@@ -1,0 +1,30 @@
+@model BankAccount
+
+@{
+    ViewBag.Title = "Create a Bank Account";
+    Layout = "_LayoutForSignInAndUp";
+}
+
+<form class="shadow rounded p-5" asp-action="Add" method="post">
+
+    <h2 class="text-center">Add a Bank Account<Account></Account></h2>
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input type="text" class="form-control" asp-for="Name" placeholder="e.g: Emergency , College , Vacations">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <label asp-for="Money"></label>
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">₡</span>
+        </div>
+        <input type="text" class="form-control" placeholder="100" asp-for="Money">
+    </div>
+    <span class="d-block text-danger mb-3" asp-validation-for="Money"></span>
+
+    <button type="submit" class="btn btn-success">Add</button>
+    <a asp-action="List" class="btn btn-danger">Cancel</a>
+
+</form>

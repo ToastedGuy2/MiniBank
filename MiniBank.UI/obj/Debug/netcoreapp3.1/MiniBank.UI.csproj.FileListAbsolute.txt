@@ -389,7 +389,10 @@
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Bank/Deposit.cshtml.g.cs
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Bank/Transfer.cshtml.g.cs
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Bank/Withdraw.cshtml.g.cs
-/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Index.cshtml.g.cs
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/SignOut/Default.cshtml.g.cs
-/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LayoutForSignInAndUp.cshtml.g.cs
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Add.cshtml.g.cs
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/List.cshtml.g.cs
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/Update.cshtml.g.cs
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/BankAccount/SearchResult.cshtml.g.cs
+/mnt/e1c0756d-5ff0-48d6-b652-301102195b45/Development/Pet Projects/MiniBank/MiniBank.UI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LayoutForForms.cshtml.g.cs
